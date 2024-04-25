@@ -1,10 +1,12 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
+import Navbar from '../Navbar'
 
 const TextParallaxContentExample = () => {
   return (
     <div className="bg-white">
+      <Navbar/>
       <TextParallaxContent
         imgUrl="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com//content/df/98/6168c1c449489ffa778a198d6a9a/bakery-hero1500x600-2x-v2.jpg"
         subheading="Greatness"
