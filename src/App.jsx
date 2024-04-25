@@ -1,15 +1,13 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomePage from '../src/Components/HomePage/HomePage';
+// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import TextParallaxContentExample from './Components/HomePage/HomePage'
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-      </Routes>
-    </Router>
+    <div className="App">
+      <TextParallaxContentExample />
+    </div>
   );
 }
 
