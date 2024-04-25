@@ -2,8 +2,11 @@ import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
 import Navbar from '../Navbar'
+import { useNavigate } from "react-router-dom";
 
 const TextParallaxContentExample = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="bg-white">
       <Navbar/>
@@ -19,7 +22,7 @@ const TextParallaxContentExample = () => {
         subheading="About Us"
         heading="Dive Into Our Rich History."
       >
-        <ExampleContent2 />
+        <ExampleContent2 navigate={navigate}/>
       </TextParallaxContent>
       <TextParallaxContent
         imgUrl="https://sharpsheets.io/wp-content/uploads/2022/11/bakery-solutions03.jpeg"
@@ -131,7 +134,7 @@ const ExampleContent1 = () => (
   </div>
 );
 
-const ExampleContent2 = () => (
+const ExampleContent2 = ({ navigate }) => (
   <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
     <h2 className="col-span-1 text-3xl font-bold md:col-span-4">
     Our Story Told Through Generations Of All Baked Goods People.
@@ -143,7 +146,7 @@ const ExampleContent2 = () => (
       <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
       At the heart of our bakery are our values of quality, creativity, and community. We strive to exceed expectations with every creation, delighting our customers and fostering a warm, welcoming atmosphere for all.
       </p>
-      <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
+      <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit" onClick={() => navigate('/about-us')}>
         Learn more <FiArrowUpRight className="inline" />
       </button>
     </div>
