@@ -15,7 +15,7 @@ const TextParallaxContentExample = () => {
         subheading="Greatness"
         heading="Baked For All Of Us."
       >
-        <ExampleContent1 />
+        <ExampleContent1 navigate={navigate}/>
       </TextParallaxContent>
       <TextParallaxContent
         imgUrl="https://www.lafarmbakery.com/sites/default/files/La%20Farm%20Bakers-3.jpg"
@@ -114,7 +114,7 @@ const OverlayCopy = ({ subheading, heading }) => {
   );
 };
 
-const ExampleContent1 = () => (
+const ExampleContent1 = ({ navigate }) => (
   <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
     <h2 className="col-span-1 text-3xl font-bold md:col-span-4">
     Indulge Into All Your Favorite Senses At Once.
@@ -127,7 +127,7 @@ const ExampleContent1 = () => (
       Explore our delectable menu crafted with passion and precision.
       We are sure you will be pleasantly surprised.
       </p>
-      <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
+      <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit" onClick={() => navigate('/menu-page')}>
         View our Menu <FiArrowUpRight className="inline" />
       </button>
     </div>
