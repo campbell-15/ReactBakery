@@ -6,25 +6,25 @@ const TextParallaxContentExample = () => {
   return (
     <div className="bg-white">
       <TextParallaxContent
-        imgUrl="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        subheading="Collaborate"
-        heading="Built for all of us."
+        imgUrl="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com//content/df/98/6168c1c449489ffa778a198d6a9a/bakery-hero1500x600-2x-v2.jpg"
+        subheading="Greatness"
+        heading="Baked For All Of Us."
       >
-        <ExampleContent />
+        <ExampleContent1 />
       </TextParallaxContent>
       <TextParallaxContent
-        imgUrl="https://images.unsplash.com/photo-1530893609608-32a9af3aa95c?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        subheading="Quality"
-        heading="Never compromise."
+        imgUrl="https://www.lafarmbakery.com/sites/default/files/La%20Farm%20Bakers-3.jpg"
+        subheading="About Us"
+        heading="Dive Into Our Rich History."
       >
-        <ExampleContent />
+        <ExampleContent2 />
       </TextParallaxContent>
       <TextParallaxContent
-        imgUrl="https://images.unsplash.com/photo-1504610926078-a1611febcad3?q=80&w=2416&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        subheading="Modern"
-        heading="Dress for the best."
+        imgUrl="https://sharpsheets.io/wp-content/uploads/2022/11/bakery-solutions03.jpeg"
+        subheading="Stay Connected"
+        heading="Follow us On Social Media."
       >
-        <ExampleContent />
+        <ExampleContent3 />
       </TextParallaxContent>
     </div>
   );
@@ -109,21 +109,56 @@ const OverlayCopy = ({ subheading, heading }) => {
   );
 };
 
-const ExampleContent = () => (
+const ExampleContent1 = () => (
   <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
     <h2 className="col-span-1 text-3xl font-bold md:col-span-4">
-      Additional content explaining the above card here
+    Indulge Into All Your Favorite Senses At Once.
     </h2>
     <div className="col-span-1 md:col-span-8">
       <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-        blanditiis soluta eius quam modi aliquam quaerat odit deleniti minima
-        maiores voluptate est ut saepe accusantium maxime doloremque nulla
-        consectetur possimus.
+      Step into a world of culinary delight as you explore our meticulously crafted menu, brimming with an array of flavors, each creation infused with passion and precision.
       </p>
       <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-        reiciendis blanditiis aliquam aut fugit sint.
+      Explore our delectable menu crafted with passion and precision.
+      We are sure you will be pleasantly surprised.
+      </p>
+      <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
+        View our Menu <FiArrowUpRight className="inline" />
+      </button>
+    </div>
+  </div>
+);
+
+const ExampleContent2 = () => (
+  <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
+    <h2 className="col-span-1 text-3xl font-bold md:col-span-4">
+    Our Story Told Through Generations Of All Baked Goods People.
+    </h2>
+    <div className="col-span-1 md:col-span-8">
+      <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
+      Our mission is to spread happiness, one bite at a time. We believe in using only the finest ingredients, handcrafting each pastry and loaf of bread with care and dedication.
+      </p>
+      <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
+      At the heart of our bakery are our values of quality, creativity, and community. We strive to exceed expectations with every creation, delighting our customers and fostering a warm, welcoming atmosphere for all.
+      </p>
+      <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
+        Learn more <FiArrowUpRight className="inline" />
+      </button>
+    </div>
+  </div>
+);
+
+const ExampleContent3 = () => (
+  <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
+    <h2 className="col-span-1 text-3xl font-bold md:col-span-4">
+      Be Kept In The Loop. Hear From Us First While Its Still Warm.
+    </h2>
+    <div className="col-span-1 md:col-span-8">
+      <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
+      Stay connected with us on social media to be the first to know about our latest creations, special promotions, and upcoming events.
+      </p>
+      <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
+        Posts about your favorite baked goods never hurt anyone anyways...
       </p>
       <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
         Learn more <FiArrowUpRight className="inline" />
