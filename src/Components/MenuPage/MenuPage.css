@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
+    
+    :root {
+        --surface-color: #fff;
+        --curve: 40;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Noto Sans JP', sans-serif;
+        background-color: #fef8f8;
+    }
+
+    .recipes {
+        padding: 0 2rem; /* Added padding */
+    }
+    
+    .cards {
+        display: grid !important;
+        grid-template-columns: repeat(4, minmax(280px, 1fr));
+        gap: 2rem !important;
+        margin: 4rem auto;
+        padding: 0 !important;
+        justify-content: center;
+        list-style-type: none !important;
+        margin-left: 5px;
+        /* margin-right: 5px;  */
+
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(1, minmax(200px, 1fr)); /* Adjusted column settings for smaller screens */
+        }
+    }
+    
+    .card {
+        position: relative;
+        display: block;
+        height: 100%;
+        width: 100%;
+        max-width: 380px;  
+        border-radius: calc(var(--curve) * 1px);
+        overflow: hidden;
+        text-decoration: none;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        justify-content: space-between;
+    }
+    
+    .card__image {      
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+    
+    .card__overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;      
+        border-radius: calc(var(--curve) * 1px);    
+        background-color: var(--surface-color);      
+        transform: translateY(100%);
+        transition: .2s ease-in-out;
+    }
+    
+    .card:hover .card__overlay {
+        transform: translateY(0);
+    }
+    
+    .card__header {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        padding: 2em;
+        border-radius: calc(var(--curve) * 1px) 0 0 0;    
+        background-color: var(--surface-color);
+        transform: translateY(-100%);
+        transition: .2s ease-in-out;
+    }
+    
+    .card__arc {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        bottom: 100%;
+        right: 0;      
+        z-index: 1;
+    }
+    
+    .card__arc path {
+        fill: var(--surface-color);
+    }       
+    
+    .card:hover .card__header {
+        transform: translateY(0);
+    }
+    
+    .card__thumb {
+        flex-shrink: 0;
+        width: 50px;
+        height: 50px;      
+        border-radius: 50%;      
+    }
+    
+    .card__title {
+        font-size: 1em;
+        margin: 0 0 .3em;
+        color: #6A515E;
+    }
+    
+    .card__tagline {
+        display: block;
+        margin: 1em 0;
+        font-family: "MockFlowFont";  
+        font-size: .8em; 
+        color: #be9aac;  
+    }
+    
+    .card__status {
+        font-size: .8em;
+        color: #D7BDCA;
+    }
+    
+    .card__description {
+        padding: 0 2em 2em;
+        margin: 0;
+        color: #be9aac;
+        font-family: "MockFlowFont";   
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+    }
+    
+    .ingredients {
+        width: 100px;
+        height: 30px;
+        font-size: 1em;
+        color: #6A515E;
+        border-radius: 8px;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    /* .logo {
+        margin-bottom: 20px; 
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center; 
+        margin-bottom: 20px; 
+    } */
+
+    input, button {
+        margin: 0;
+        padding: 0;
+        outline: none;
+        border: none;
+        border-radius: 0;
+        vertical-align: top;
+      } /* CSS reset end */
+
+    form {
+        text-align: center;
+        height: 30px;
+        margin-bottom: 100px;
+    }
+
+    button {
+        text-align: center;
+        border: 0px 35px 35px 0 solid black;
+        height: 70px;
+        width: 70px;
+        background: white;
+        border-radius: 0 35px 35px 0;
+        color: rgb(170, 170, 170);
+        font-size: 1.4rem;
+    }
+
+    input[type="text"] {
+        border: none;
+        height: 70px;
+        width: 400px;
+        outline: none;
+        margin-bottom: 20%;
+        padding-left: 40px;
+        border-radius: 35px 0 0 35px;
+        color: rgb(110,110,110);
+        font-size: 1.6rem;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .title {
+        text-align: center;
+    }
