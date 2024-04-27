@@ -25,28 +25,41 @@ const MenuPage = () => {
             id: 3,
             title: "Chocolate Cake",
             description: "Indulge in decadence with our rich and moist chocolate cake, a timeless treat for any occasion.",
-            ingredients: ["Flour", "Sugar", "Cocoa powder", "Eggs", "Butter", "Milk"],
             tagLine: ["Fancy a sweet treat? We don't blame you..."],
             imageURL: "https://www.halfbakedharvest.com/wp-content/uploads/2018/08/Better-Together-Chocolate-Vanilla-Birthday-Cake-1.jpg"
         },
         {
             id: 4,
-            title: "T-Bone Steak",
-            description: "T-Bone steak: Juicy, flavorful beef cut showcasing both tenderloin and strip loin.",
-            ingredients: ["T-Bone steak", "Salt", "Pepper", "Olive oil"],
-            tagLine: ["Yummiest T-Bone Steak in South Africa"],
-            imageURL: "https://images.immediate.co.uk/production/volatile/sites/2/2018/10/Pan-Fried-T-Bone-Steak-284bfa5.jpg"
+            title: "Banana Bread",
+            description: "Most delicious banana bread that's perfect for anyones palette",
+            tagLine: ["Yummiest Banana Bread in South Africa. It's fact"],
+            imageURL: "https://www.simplyrecipes.com/thmb/tR-5eHAZ3lgNR6Yvu3yxdHMNpk8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Easy-Banana-Bread-LEAD-2-2-63dd39af009945d58f5bf4c2ae8d6070.jpg"
         },
         {
             id: 5,
-            title: "Lasagna",
-            description: "Savory layers of pasta, rich tomato sauce, creamy cheese, and seasoned ground meat come together in this classic Italian comfort dish.",
-            ingredients: ["lasagna noodles", "ground beef", "tomato sauce", "ricotta cheese", "mozzarella cheese"],
+            title: "Carrot Cake",
+            description: "Indulge is some fantastic carrot cake at a buy a slice and get one slice free!",
             tagLine: ["Quick and easy meal for the family"],
-            imageURL: "https://assets.epicurious.com/photos/6508a14155b19af4200459c7/4:6/w_1932,h_2898,c_limit/Sausage-Cheese-Basil-Lasanga_RECIPE.jpg"
+            imageURL: "https://www.spoonforkbacon.com/wp-content/uploads/2021/03/carrot_cake_recipe_card.jpg"
         },
         {
             id: 6,
+            title: "Pepper & Steak Pie",
+            description: "Indulge in a savory delight with our Pepper & Steak Pie – A harmonious blend of tender steak and flavorful peppers baked to perfection in a flaky crust.",
+            ingredients: ["steak", "bell peppers", "onion", "flour", "beef broth", "puff pastry"],
+            tagLine: ["Try something new! You won't regret it..."],
+            imageURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIuCXkwS6WKizF3JRIPyJ3wkKG_VTNj9tHeenCLp7hlg&s"
+        },
+        {
+            id: 7,
+            title: "Pepper & Steak Pie",
+            description: "Indulge in a savory delight with our Pepper & Steak Pie – A harmonious blend of tender steak and flavorful peppers baked to perfection in a flaky crust.",
+            ingredients: ["steak", "bell peppers", "onion", "flour", "beef broth", "puff pastry"],
+            tagLine: ["Try something new! You won't regret it..."],
+            imageURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIuCXkwS6WKizF3JRIPyJ3wkKG_VTNj9tHeenCLp7hlg&s"
+        },
+        {
+            id: 8,
             title: "Pepper & Steak Pie",
             description: "Indulge in a savory delight with our Pepper & Steak Pie – A harmonious blend of tender steak and flavorful peppers baked to perfection in a flaky crust.",
             ingredients: ["steak", "bell peppers", "onion", "flour", "beef broth", "puff pastry"],
