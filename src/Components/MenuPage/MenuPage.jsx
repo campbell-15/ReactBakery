@@ -44,11 +44,10 @@ const MenuPage = () => {
         },
         {
             id: 6,
-            title: "Pepper & Steak Pie",
-            description: "Indulge in a savory delight with our Pepper & Steak Pie – A harmonious blend of tender steak and flavorful peppers baked to perfection in a flaky crust.",
-            ingredients: ["steak", "bell peppers", "onion", "flour", "beef broth", "puff pastry"],
-            tagLine: ["Try something new! You won't regret it..."],
-            imageURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIuCXkwS6WKizF3JRIPyJ3wkKG_VTNj9tHeenCLp7hlg&s"
+            title: "Donuts",
+            description: "Dive into your favorite lunch time treat with our hundreds of donut flavours to chose from.",
+            tagLine: ["Give it a whirl, you might just be surprised by how amazing life feels after eating one."],
+            imageURL: "https://cdn.britannica.com/38/230838-050-D0173E79/doughnuts-donuts.jpg"
         },
         {
             id: 7,
@@ -60,11 +59,10 @@ const MenuPage = () => {
         },
         {
             id: 8,
-            title: "Pepper & Steak Pie",
-            description: "Indulge in a savory delight with our Pepper & Steak Pie – A harmonious blend of tender steak and flavorful peppers baked to perfection in a flaky crust.",
-            ingredients: ["steak", "bell peppers", "onion", "flour", "beef broth", "puff pastry"],
-            tagLine: ["Try something new! You won't regret it..."],
-            imageURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIuCXkwS6WKizF3JRIPyJ3wkKG_VTNj9tHeenCLp7hlg&s"
+            title: "Chocolate Brownie",
+            description: "Indulge in a savory delight with our chocolate brownie, designed to fill your satisfaction",
+            tagLine: ["Try something new! You won't regret it...We promise you that."],
+            imageURL: "https://cafedelites.com/wp-content/uploads/2016/08/Fudgy-Cocoa-Brownies-44-1.jpg"
         }
     ]);
 
