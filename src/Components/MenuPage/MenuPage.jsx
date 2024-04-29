@@ -85,9 +85,9 @@ const MenuPage = () => {
 
 
     return (
-        
+    <div>
+        <Navbar/>    
         <div className="recipes">
-        <Navbar/>
         <form className="form-container">
         <input type="text" value={searchQuery} onChange={handleSearchChange} placeholder="Search for a recipe..." />
         <button type="button">
@@ -114,7 +114,7 @@ const MenuPage = () => {
                 ))}
             </ul>
         </div>
-        
+    </div>    
     )
 }
 
