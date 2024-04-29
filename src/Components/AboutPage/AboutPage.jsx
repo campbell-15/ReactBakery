@@ -1,5 +1,6 @@
-import React from 'react'
-import Navbar from '../Navbar'
+import React from 'react';
+import Navbar from '../Navbar';
+import './AboutPage.css';
 
 const AboutPage = () => {
   return (
