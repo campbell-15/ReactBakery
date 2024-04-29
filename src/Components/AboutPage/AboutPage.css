@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Set the height to 100% of its parent container */
+}
+
+.overflow-hidden {
+    overflow: hidden;
+    max-height: 30vh;
+}
+
+.centered-img {
+    border-radius: 3px;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .container {
+        height: 80vh; /* Adjust the height for larger screens */
+    }
+}
