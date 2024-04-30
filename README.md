@@ -1,6 +1,6 @@
 # React Bakeries
 
-This Project was built using Reactjs
+This Project was built using Reactjs and Tailwind CSS
 
 ## Live Deployment
 
