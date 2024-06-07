@@ -63,6 +63,13 @@ const MenuPage = () => {
             description: "Indulge in a savory delight with our chocolate brownie, designed to fill your satisfaction",
             tagLine: ["Try something new! You won't regret it...We promise you that."],
             imageURL: "https://cafedelites.com/wp-content/uploads/2016/08/Fudgy-Cocoa-Brownies-44-1.jpg"
+        },
+        {
+            id: 9,
+            title: "Chocolate Cake",
+            description: "Indulge in a savory delight with our chocolate brownie, designed to fill your satisfaction",
+            tagLine: ["Try something new! You won't regret it...We promise you that."],
+            imageURL: "https://cafedelites.com/wp-content/uploads/2016/08/Fudgy-Cocoa-Brownies-44-1.jpg"
         }
     ]);
 
