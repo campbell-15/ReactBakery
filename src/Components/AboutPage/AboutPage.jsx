@@ -1,8 +1,12 @@
 import React from 'react';
 import Navbar from '../Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { FiArrowUpRight } from "react-icons/fi";
+import { useNavigate } from "react-router-dom";
 
 const AboutPage = () => {
+  const navigate = useNavigate();
+
   return (
     <div>
       <Navbar/>
@@ -49,7 +53,11 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
+      <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit" onClick={() => navigate('/menu-page')}>
+        View Menu<FiArrowUpRight className="inline" />
+      </button>
   </div>
+  
   )
 }
 
